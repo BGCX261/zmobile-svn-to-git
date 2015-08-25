@@ -1,0 +1,647 @@
+net.zmobile.Test9Cells -> net.zmobile.Test9Cells:
+    void destroyApp(boolean) -> destroyApp
+    void pauseApp() -> pauseApp
+    void startApp() -> startApp
+net.zmobile.ZMobile -> net.zmobile.a:
+    int KEY_LEFT_SOFT -> a
+    int KEY_RIGHT_SOFT -> b
+net.zmobile.ZMobileDemo -> net.zmobile.ZMobileDemo:
+    void destroyApp(boolean) -> destroyApp
+    void pauseApp() -> pauseApp
+    void startApp() -> startApp
+net.zmobile.ZMobileDemo$1 -> net.zmobile.b:
+    net.zmobile.ui.ZTextBox val$result -> a
+    net.zmobile.ui.ZTextBox val$btn -> b
+    void event$45d4521a(int,net.zmobile.ui.ZComponent) -> a
+net.zmobile.ge.ZPoint -> c:
+    int x -> a
+    int y -> b
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    java.lang.String toString() -> toString
+net.zmobile.ge.ZRect -> d:
+    int x -> a
+    int y -> b
+    int width -> c
+    int height -> d
+    boolean contains(net.zmobile.ge.ZPoint) -> a
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    java.lang.String toString() -> toString
+net.zmobile.io.Storeage -> b:
+    boolean checkStore() -> a
+    int readSize() -> b
+    void store(byte[]) -> a
+    byte[] read() -> c
+net.zmobile.lh.ConnectionException -> net.zmobile.lh.a:
+net.zmobile.lh.Context -> net.zmobile.lh.c:
+    java.lang.String sourceURL -> a
+    boolean httpOrLocal -> b
+    java.util.Vector params -> c
+    java.lang.String appId -> d
+    java.lang.String folderNum -> e
+    java.lang.String fileName -> f
+    java.lang.String connId -> g
+    java.util.Stack variableStack -> h
+    java.util.Stack vRepeatStack -> E
+    java.util.Hashtable optMap -> i
+    boolean tmpContext -> j
+    boolean bNoTrnst -> k
+    java.util.Hashtable hsSession -> l
+    int intCmndPoint -> m
+    java.lang.String strErrCodeHold -> n
+    java.lang.String strErrCommandNoHold -> o
+    java.lang.String strErrExecPointer -> p
+    net.zmobile.ui.html.ZHTMLForm panel -> q
+    int fgcolor -> r
+    int bgcolor -> s
+    javax.microedition.lcdui.Font fnt -> t
+    int methodGET_POST -> u
+    byte[] body -> v
+    boolean bInfRldFlg -> w
+    boolean subrtn -> x
+    java.util.Vector retvals -> y
+    java.lang.Object uilock -> F
+    boolean blocked -> G
+    java.util.Hashtable buttonMap -> H
+    byte[][] keyMap -> z
+    byte[][] softkeyMap -> A
+    java.util.Hashtable chkMap -> B
+    java.util.Vector images -> C
+    java.util.Vector[] forms -> D
+    byte[] template -> I
+    java.util.Stack wkstack -> J
+    net.zmobile.lh.Context next(java.lang.String,boolean) -> a
+    void put(java.lang.String,java.lang.Object) -> a
+    java.lang.Object get(java.lang.String) -> a
+    java.lang.String getVariable(java.lang.String) -> b
+    void del(java.lang.String) -> c
+    void push(java.util.Hashtable) -> a
+    void pop() -> a
+    void setPanel(net.zmobile.ui.html.ZHTMLForm,int) -> a
+    void dispose() -> b
+    void addButton(net.zmobile.ui.ZComponent,byte[]) -> a
+    void reset(int) -> a
+    void setParameters(java.util.Vector,int) -> a
+    void setParamsToVars(java.util.Vector) -> a
+    boolean keyEventCheckAndLock() -> e
+    void keyEventUnlock() -> f
+    void componentAction$316cd8f3(net.zmobile.ui.ZComponent) -> a
+    java.lang.String setServerSessionID(java.lang.String) -> d
+    java.lang.String toQueryString() -> c
+    void run() -> run
+    void set(java.lang.String,java.lang.Object) -> b
+    java.lang.Object getObject(java.lang.String) -> e
+    void push2(int) -> b
+    void pop2() -> d
+    void event$45d4521a(int,net.zmobile.ui.ZComponent) -> a
+net.zmobile.lh.ZMobileApp -> net.zmobile.lh.ZMobileApp:
+    javax.microedition.midlet.MIDlet instance -> b
+    java.lang.String INIT_URL -> c
+    java.lang.String VERSION -> d
+    java.util.Hashtable apps -> e
+    net.zmobile.lh.Context cntxtPreScreen -> f
+    net.zmobile.lh.Context cntxtTmpScreen -> g
+    net.zmobile.lh.Context CurrentContext -> a
+    boolean changed -> h
+    int used -> i
+    int nokori -> j
+    java.util.Hashtable root -> k
+    void startApp() -> startApp
+    byte[] readByteArray(java.io.DataInputStream,net.zmobile.lh.Context) -> a
+    void procRun(net.zmobile.lh.Context,net.zmobile.lh.Context) -> a
+    byte[] procFetch(net.zmobile.lh.Context,net.zmobile.lh.Context,boolean) -> a
+    boolean procScript(java.io.DataInputStream,net.zmobile.lh.Context) -> b
+    void procUpdateResourceSet(java.io.DataInputStream,net.zmobile.lh.Context) -> c
+    void procStoreFiles(java.io.DataInputStream,net.zmobile.lh.Context) -> d
+    void procExec(byte[],net.zmobile.lh.Context) -> a
+    void procPage(java.io.DataInputStream,net.zmobile.lh.Context,int) -> a
+    void procBlock(java.io.DataInputStream,net.zmobile.lh.Context) -> e
+    boolean procRelevant(java.io.DataInputStream,net.zmobile.lh.Context) -> f
+    java.lang.String procText(java.io.DataInputStream,net.zmobile.lh.Context) -> g
+    java.lang.String procBsearch(byte[],int) -> a
+    javax.microedition.lcdui.Image procGetMI(java.lang.String,net.zmobile.lh.Context) -> b
+    void procSetScreen(net.zmobile.lh.Context) -> a
+    void procRestore() -> a
+    void procErrorDialog(java.lang.String) -> a
+    void procErrorDialog(java.lang.String,java.lang.Exception) -> a
+    java.lang.String procGetErrorCode(java.lang.Exception) -> a
+    java.lang.String[] procReadStringArray(java.io.DataInputStream,net.zmobile.lh.Context) -> h
+    byte[] procInt2bytes(int) -> a
+    int procBytes2int(byte[]) -> a
+    java.lang.String getOctetString(byte[]) -> b
+    java.lang.String checkVarRef(java.lang.String,net.zmobile.lh.Context) -> a
+    java.lang.String getOperand(java.io.DataInputStream,net.zmobile.lh.Context) -> i
+    java.lang.String getSessionString(java.lang.String) -> b
+    void dsetUpdate(java.util.Hashtable,byte[],net.zmobile.lh.Context) -> a
+    java.lang.Object dsetDeserializeObject(byte[],net.zmobile.lh.Context) -> b
+    java.lang.Object dsetDeserializeObject(java.io.DataInputStream,net.zmobile.lh.Context) -> j
+    void dsetUpdate(java.util.Hashtable,java.util.Hashtable) -> a
+    byte[] dsetSerialize(java.lang.Object) -> a
+    void dsetSerialize(java.io.DataOutputStream,java.lang.Object) -> a
+    void init(net.zmobile.lh.Context) -> c
+    void registVendor(java.util.Hashtable,net.zmobile.lh.Context) -> a
+    void registApp(java.lang.String,java.util.Hashtable,net.zmobile.lh.Context) -> a
+    void removeApp(java.lang.String,net.zmobile.lh.Context) -> c
+    java.util.Hashtable getApp(java.lang.String,net.zmobile.lh.Context) -> d
+    java.util.Vector getApps(net.zmobile.lh.Context) -> d
+    void checkPermRW(java.lang.String,net.zmobile.lh.Context) -> e
+    void checkPermX(net.zmobile.lh.Context,net.zmobile.lh.Context) -> b
+    java.lang.Object read(java.util.Hashtable,java.lang.String,boolean,net.zmobile.lh.Context,boolean) -> a
+    java.lang.Object read(net.zmobile.lh.Context,net.zmobile.lh.Context,boolean) -> b
+    void write(java.util.Hashtable,java.lang.String,byte[],net.zmobile.lh.Context,boolean) -> a
+    java.util.Hashtable create(java.util.Hashtable,java.lang.String,net.zmobile.lh.Context) -> a
+    void delete(java.util.Hashtable,java.lang.String,net.zmobile.lh.Context,boolean) -> a
+    void commit(net.zmobile.lh.Context) -> e
+    int commit(java.util.Hashtable,java.io.DataOutputStream,int) -> a
+    boolean isInitialized() -> b
+    void format(net.zmobile.lh.Context) -> f
+    void open(net.zmobile.lh.Context) -> b
+    void open(java.io.DataInputStream,java.util.Hashtable,net.zmobile.lh.Context) -> a
+    void checkFileName(java.lang.String,net.zmobile.lh.Context,boolean) -> a
+    java.util.Vector split(java.lang.String,net.zmobile.lh.Context) -> f
+    void quickSort(java.util.Vector,int,int) -> a
+    java.util.Vector vectorSort(java.util.Vector,net.zmobile.lh.Context) -> a
+    void checkLoop(net.zmobile.lh.Context,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.util.Vector,java.util.Vector) -> a
+    java.util.Vector checkVarlist(net.zmobile.lh.Context,java.lang.String) -> a
+    java.util.Vector procUniqueVector(java.util.Vector) -> a
+    boolean procCompare(int,java.lang.String,java.lang.String,net.zmobile.lh.Context) -> a
+    void destroyApp(boolean) -> destroyApp
+    void pauseApp() -> pauseApp
+net.zmobile.lh.ZMobileApp$1 -> net.zmobile.lh.b:
+    void run() -> run
+net.zmobile.ui.Listener -> net.zmobile.ui.h:
+    void event$45d4521a(int,net.zmobile.ui.ZComponent) -> a
+net.zmobile.ui.ShadowCanvas -> net.zmobile.ui.r:
+    int w -> a
+    int h -> b
+    javax.microedition.lcdui.Image srcImage -> c
+    int[] srcRgbImage -> d
+    int[] shadowRgbImage -> e
+    int imgWidth -> f
+    int imgHeight -> g
+    int count -> h
+    javax.microedition.lcdui.Image image -> i
+    void paint(javax.microedition.lcdui.Graphics) -> paint
+    void run() -> run
+net.zmobile.ui.ShadowMIDlet -> net.zmobile.ui.ShadowMIDlet:
+    javax.microedition.lcdui.Canvas c -> a
+    void startApp() -> startApp
+    void pauseApp() -> pauseApp
+    void destroyApp(boolean) -> destroyApp
+net.zmobile.ui.SplashCanvas -> net.zmobile.ui.x:
+    javax.microedition.lcdui.Image img -> a
+    javax.microedition.lcdui.Image imgBuff -> b
+    javax.microedition.lcdui.Graphics ibg -> c
+    int w -> d
+    int h -> e
+    int num -> f
+    double angle -> g
+    int wave -> h
+    void paint(javax.microedition.lcdui.Graphics) -> paint
+    void run() -> run
+net.zmobile.ui.TestSplashCanvas -> net.zmobile.ui.TestSplashCanvas:
+    void destroyApp(boolean) -> destroyApp
+    void pauseApp() -> pauseApp
+    void startApp() -> startApp
+net.zmobile.ui.TestZAnimation -> net.zmobile.ui.TestZAnimation:
+    void destroyApp(boolean) -> destroyApp
+    void pauseApp() -> pauseApp
+    void startApp() -> startApp
+net.zmobile.ui.TestZButton -> net.zmobile.ui.TestZButton:
+    void destroyApp(boolean) -> destroyApp
+    void pauseApp() -> pauseApp
+    void startApp() -> startApp
+    void addContainerZButton(net.zmobile.ui.ZContainer) -> a
+net.zmobile.ui.TestZButton$1 -> net.zmobile.ui.o:
+    net.zmobile.ui.ZForm val$form -> a
+    void event$45d4521a(int,net.zmobile.ui.ZComponent) -> a
+net.zmobile.ui.TestZDialog -> net.zmobile.ui.TestZDialog:
+    void destroyApp(boolean) -> destroyApp
+    void pauseApp() -> pauseApp
+    void startApp() -> startApp
+net.zmobile.ui.TestZDialog$1 -> net.zmobile.ui.n:
+    void event$45d4521a(int,net.zmobile.ui.ZComponent) -> a
+net.zmobile.ui.TestZGroup -> net.zmobile.ui.TestZGroup:
+    void destroyApp(boolean) -> destroyApp
+    void pauseApp() -> pauseApp
+    void startApp() -> startApp
+    void addZGRoup(net.zmobile.ui.ZForm,byte) -> a
+net.zmobile.ui.TestZHTMLLayout -> net.zmobile.ui.TestZHTMLLayout:
+    void destroyApp(boolean) -> destroyApp
+    void pauseApp() -> pauseApp
+    void startApp() -> startApp
+    void addContainerLink(net.zmobile.ui.ZContainer) -> a
+net.zmobile.ui.TestZImage -> net.zmobile.ui.TestZImage:
+    void destroyApp(boolean) -> destroyApp
+    void pauseApp() -> pauseApp
+    void startApp() -> startApp
+net.zmobile.ui.TestZLabel -> net.zmobile.ui.TestZLabel:
+    void destroyApp(boolean) -> destroyApp
+    void pauseApp() -> pauseApp
+    void startApp() -> startApp
+net.zmobile.ui.TestZLink -> net.zmobile.ui.TestZLink:
+    void destroyApp(boolean) -> destroyApp
+    void pauseApp() -> pauseApp
+    void startApp() -> startApp
+net.zmobile.ui.TestZMenu -> net.zmobile.ui.TestZMenu:
+    void destroyApp(boolean) -> destroyApp
+    void pauseApp() -> pauseApp
+    void startApp() -> startApp
+net.zmobile.ui.TestZStatusButton -> net.zmobile.ui.TestZStatusButton:
+    void destroyApp(boolean) -> destroyApp
+    void pauseApp() -> pauseApp
+    void startApp() -> startApp
+net.zmobile.ui.TestZTextBox -> net.zmobile.ui.TestZTextBox:
+    void destroyApp(boolean) -> destroyApp
+    void pauseApp() -> pauseApp
+    void startApp() -> startApp
+net.zmobile.ui.TestZTicker -> net.zmobile.ui.TestZTicker:
+    int proo -> a
+    void destroyApp(boolean) -> destroyApp
+    void pauseApp() -> pauseApp
+    void startApp() -> startApp
+net.zmobile.ui.TestZTicker$1 -> net.zmobile.ui.d:
+    net.zmobile.ui.TestZTicker this$0 -> a
+    net.zmobile.ui.ZTicker val$ticker -> b
+    void event$45d4521a(int,net.zmobile.ui.ZComponent) -> a
+net.zmobile.ui.Text -> net.zmobile.ui.t:
+    char[] ellipsis -> a
+    int getHeightForWidth(java.lang.String,javax.microedition.lcdui.Font,int,int) -> a
+    int paint(java.lang.String,javax.microedition.lcdui.Font,javax.microedition.lcdui.Graphics,int,int,int,int,com.sun.midp.lcdui.TextCursor) -> a
+    boolean getNextLine(char[],javax.microedition.lcdui.Font,int[]) -> a
+net.zmobile.ui.ZAnimation -> net.zmobile.ui.a:
+    javax.microedition.lcdui.Image[] image -> a
+    int index -> b
+    java.util.Timer tm -> c
+    java.util.TimerTask tk -> d
+    net.zmobile.ge.ZPoint computeSize(int,int) -> a
+    void draw(javax.microedition.lcdui.Graphics) -> a
+    void drawStatus(javax.microedition.lcdui.Graphics) -> b
+net.zmobile.ui.ZAnimation$1 -> net.zmobile.ui.e:
+    void run() -> run
+net.zmobile.ui.ZButton -> net.zmobile.ui.i:
+    javax.microedition.lcdui.Image _image -> a
+    void draw(javax.microedition.lcdui.Graphics) -> a
+    void drawStatus(javax.microedition.lcdui.Graphics) -> b
+    net.zmobile.ge.ZPoint computeSize(int,int) -> a
+net.zmobile.ui.ZComponent -> net.zmobile.ui.y:
+    net.zmobile.ge.ZRect _bodyRect -> h
+    java.lang.Object _layoutData -> a
+    javax.microedition.lcdui.Font _font -> i
+    java.lang.String _text -> j
+    boolean _isFoucus -> k
+    boolean _isCanFoucus -> l
+    boolean _isPressed -> m
+    java.util.Vector _listeners -> n
+    java.util.Vector _listenerTypes -> o
+    void setLayoutData(java.lang.Object) -> a
+    java.lang.Object getLayoutData() -> i
+    void addListener(byte,net.zmobile.ui.Listener) -> a
+    boolean isCanFoucus() -> j
+    void setFocus(boolean) -> b
+    void setBounds(net.zmobile.ge.ZRect) -> a
+    net.zmobile.ge.ZRect getBounds() -> k
+    void draw(javax.microedition.lcdui.Graphics) -> a
+    void redraw(javax.microedition.lcdui.Graphics) -> c
+    void drawStatus(javax.microedition.lcdui.Graphics) -> b
+    void setFont(javax.microedition.lcdui.Font) -> a
+    java.lang.String getText() -> l
+    void setText(java.lang.String) -> a
+    void firePointRelease(net.zmobile.ge.ZPoint) -> a
+    void firePointPressed(net.zmobile.ge.ZPoint) -> b
+    void fireSelectedRelease() -> a
+    void fireSelectedPressed() -> c
+    void fireEvent(int,int,int,int) -> a
+    net.zmobile.ge.ZPoint computeSize(int,int) -> a
+    void drawRect(javax.microedition.lcdui.Graphics,net.zmobile.ge.ZRect,int) -> a
+    void fillRect(javax.microedition.lcdui.Graphics,net.zmobile.ge.ZRect,int) -> b
+    void setClip(javax.microedition.lcdui.Graphics,net.zmobile.ge.ZRect,int) -> c
+    void drawString(javax.microedition.lcdui.Graphics,net.zmobile.ge.ZRect,java.lang.String) -> a
+    java.lang.String toString() -> toString
+net.zmobile.ui.ZContainer -> net.zmobile.ui.w:
+    java.util.Vector _components -> c
+    net.zmobile.ui.layout.ZLayout _lManger -> d
+    int translateX -> e
+    int translateY -> f
+    net.zmobile.ge.ZRect _clientRect -> g
+    net.zmobile.ge.ZPoint _contentSize -> a
+    net.zmobile.ge.ZRect scrollRect -> b
+    int scrollPos -> p
+    boolean _isScroll -> q
+    java.util.Vector getComponents() -> b
+    void add(net.zmobile.ui.ZComponent) -> a
+    void setLayout(net.zmobile.ui.layout.ZLayout) -> a
+    void resize() -> a_
+    void firePointRelease(net.zmobile.ge.ZPoint) -> a
+    void firePointPressed(net.zmobile.ge.ZPoint) -> b
+    void fireSelectedRelease() -> a
+    void fireSelectedPressed() -> c
+    void draw(javax.microedition.lcdui.Graphics) -> a
+    boolean setFoucus() -> d
+    boolean nextFoucus() -> e
+    boolean previousFoucus() -> f
+    void drawStatus(javax.microedition.lcdui.Graphics) -> b
+    net.zmobile.ge.ZRect getClientArea() -> g
+    void setBounds(net.zmobile.ge.ZRect) -> a
+    void setScroll(boolean) -> a
+    boolean isScroll() -> h
+    net.zmobile.ge.ZPoint computeSize(int,int) -> a
+net.zmobile.ui.ZContainer$1 -> net.zmobile.ui.l:
+    net.zmobile.ui.ZContainer this$0 -> a
+    void event$45d4521a(int,net.zmobile.ui.ZComponent) -> a
+net.zmobile.ui.ZDialog -> net.zmobile.ui.m:
+    net.zmobile.ui.ZLabel label -> a
+    void draw(javax.microedition.lcdui.Graphics) -> a
+    void resize() -> a_
+    void setText(java.lang.String) -> a
+net.zmobile.ui.ZDialog$1 -> net.zmobile.ui.k:
+    void event$45d4521a(int,net.zmobile.ui.ZComponent) -> a
+net.zmobile.ui.ZForm -> net.zmobile.ui.p:
+    net.zmobile.ui.ZFormCanvas canvas -> p
+    net.zmobile.ui.ZForm instance -> a
+    javax.microedition.lcdui.Display display -> b
+    java.lang.String _title -> q
+    java.lang.String leftLabel -> r
+    java.lang.String rightLabel -> s
+    void show(javax.microedition.lcdui.Display) -> a
+    void setTitle(java.lang.String) -> b
+    void draw(javax.microedition.lcdui.Graphics) -> a
+    void setLeftLabel(java.lang.String) -> c
+    void setRightLabel(java.lang.String) -> d
+    void setBounds(net.zmobile.ge.ZRect) -> a
+net.zmobile.ui.ZFormCanvas -> net.zmobile.ui.b:
+    javax.microedition.lcdui.Image img -> d
+    java.util.Stack uiStack -> e
+    net.zmobile.ui.ZFormCanvas instance -> a
+    int status -> b
+    java.lang.Object mainThreadMetux -> f
+    java.lang.Object dialogMetux -> c
+    int _keyCode -> g
+    int MSG_TYPE -> h
+    net.zmobile.ge.ZPoint MSG_POINTER -> i
+    java.util.Stack getUIStack() -> a
+    void push(java.lang.Object) -> a
+    java.lang.Object pop() -> b
+    net.zmobile.ui.ZFormCanvas getInstance() -> c
+    void paint(javax.microedition.lcdui.Graphics) -> paint
+    void pointerDragged(int,int) -> pointerDragged
+    void pointerReleased(int,int) -> pointerReleased
+    void keyReleased(int) -> keyReleased
+    void pointerPressed(int,int) -> pointerPressed
+    void procEvent(int,int,int) -> a
+    int convertKeyCode(int) -> a
+    void keyPressed(int) -> keyPressed
+    void run() -> run
+net.zmobile.ui.ZGroup -> net.zmobile.ui.s:
+    void draw(javax.microedition.lcdui.Graphics) -> a
+net.zmobile.ui.ZImage -> net.zmobile.ui.u:
+    javax.microedition.lcdui.Image _image -> a
+    void draw(javax.microedition.lcdui.Graphics) -> a
+    void drawStatus(javax.microedition.lcdui.Graphics) -> b
+    net.zmobile.ge.ZPoint computeSize(int,int) -> a
+    void setBounds(net.zmobile.ge.ZRect) -> a
+net.zmobile.ui.ZLabel -> net.zmobile.ui.ab:
+    void draw(javax.microedition.lcdui.Graphics) -> a
+    void drawStatus(javax.microedition.lcdui.Graphics) -> b
+    net.zmobile.ge.ZPoint computeSize(int,int) -> a
+net.zmobile.ui.ZLink -> net.zmobile.ui.f:
+    void draw(javax.microedition.lcdui.Graphics) -> a
+    void drawStatus(javax.microedition.lcdui.Graphics) -> b
+    net.zmobile.ge.ZPoint computeSize(int,int) -> a
+    void setText(java.lang.String) -> a
+    void setBounds(net.zmobile.ge.ZRect) -> a
+net.zmobile.ui.ZListBox -> net.zmobile.ui.c:
+    net.zmobile.ge.ZPoint computeSize(int,int) -> a
+    void draw(javax.microedition.lcdui.Graphics) -> a
+    void drawStatus(javax.microedition.lcdui.Graphics) -> b
+net.zmobile.ui.ZMenu -> net.zmobile.ui.g:
+    byte _type -> a
+    java.util.Vector leftVector -> b
+    java.util.Vector rightVector -> p
+    void draw(javax.microedition.lcdui.Graphics) -> a
+    void resize() -> a_
+net.zmobile.ui.ZStatusButton -> net.zmobile.ui.j:
+    byte RADIO_BUTTON -> a
+    byte CHECK_BUTTON -> b
+    boolean isChecked -> c
+    int GRAP -> d
+    byte _type -> e
+    void draw(javax.microedition.lcdui.Graphics) -> a
+    void drawStatus(javax.microedition.lcdui.Graphics) -> b
+    void fireSelectedRelease() -> a
+    net.zmobile.ge.ZPoint computeSize(int,int) -> a
+net.zmobile.ui.ZTextBox -> net.zmobile.ui.ae:
+    javax.microedition.lcdui.TextBox textBox -> a
+    javax.microedition.lcdui.Image _image -> b
+    void draw(javax.microedition.lcdui.Graphics) -> a
+    void drawStatus(javax.microedition.lcdui.Graphics) -> b
+    net.zmobile.ge.ZPoint computeSize(int,int) -> a
+net.zmobile.ui.ZTextBox$1 -> net.zmobile.ui.aa:
+    net.zmobile.ui.ZTextBox this$0 -> a
+    void commandAction(javax.microedition.lcdui.Command,javax.microedition.lcdui.Displayable) -> commandAction
+net.zmobile.ui.ZTextBox$2 -> net.zmobile.ui.ac:
+    net.zmobile.ui.ZTextBox this$0 -> a
+    void event$45d4521a(int,net.zmobile.ui.ZComponent) -> a
+net.zmobile.ui.ZTextBox$3 -> net.zmobile.ui.ad:
+    net.zmobile.ui.ZTextBox this$0 -> a
+    void event$45d4521a(int,net.zmobile.ui.ZComponent) -> a
+net.zmobile.ui.ZThemes -> net.zmobile.ui.v:
+    java.lang.String NULL_IMAGE_FILE -> b
+    javax.microedition.lcdui.Image NULL_IMAGE -> a
+net.zmobile.ui.ZTicker -> net.zmobile.ui.z:
+    byte MOVE -> a
+    byte PROGRESS -> b
+    java.util.Timer tm -> c
+    java.util.TimerTask tk -> d
+    int _type -> e
+    boolean flag -> f
+    int startX -> g
+    int INC -> p
+    int progress -> q
+    void draw(javax.microedition.lcdui.Graphics) -> a
+    void setProgress(int) -> a
+    void drawStatus(javax.microedition.lcdui.Graphics) -> b
+    net.zmobile.ge.ZPoint computeSize(int,int) -> a
+    void setBounds(net.zmobile.ge.ZRect) -> a
+net.zmobile.ui.ZTicker$1 -> net.zmobile.ui.q:
+    void run() -> run
+net.zmobile.ui.html.TestZHTMLForm -> net.zmobile.ui.html.TestZHTMLForm:
+    void destroyApp(boolean) -> destroyApp
+    void pauseApp() -> pauseApp
+    void startApp() -> startApp
+net.zmobile.ui.html.ZAlign -> net.zmobile.ui.html.c:
+    int _align -> a
+    net.zmobile.ge.ZPoint computeSize(int,int) -> a
+    void draw(javax.microedition.lcdui.Graphics) -> a
+    void drawStatus(javax.microedition.lcdui.Graphics) -> b
+    int getAlign() -> b_
+net.zmobile.ui.html.ZBr -> net.zmobile.ui.html.a:
+    net.zmobile.ge.ZPoint computeSize(int,int) -> a
+    void draw(javax.microedition.lcdui.Graphics) -> a
+    void drawStatus(javax.microedition.lcdui.Graphics) -> b
+net.zmobile.ui.html.ZHTMLForm -> net.zmobile.ui.html.b:
+    net.zmobile.ui.ZFormCanvas canvas -> a
+    java.lang.String _title -> b
+    java.lang.String leftLabel -> p
+    java.lang.String rightLabel -> q
+    void setAlign(int) -> a
+    void show(javax.microedition.lcdui.Display) -> a
+    void setTitle(java.lang.String) -> a_
+    void draw(javax.microedition.lcdui.Graphics) -> a
+    void setLeftLabel(java.lang.String) -> b
+    void setRightLabel(java.lang.String) -> c
+    void setBounds(net.zmobile.ge.ZRect) -> a
+net.zmobile.ui.layout.TestComplexGridLayout -> net.zmobile.ui.layout.TestComplexGridLayout:
+    void destroyApp(boolean) -> destroyApp
+    void pauseApp() -> pauseApp
+    void startApp() -> startApp
+net.zmobile.ui.layout.TestDefaultLayout -> net.zmobile.ui.layout.TestDefaultLayout:
+    void destroyApp(boolean) -> destroyApp
+    void pauseApp() -> pauseApp
+    void startApp() -> startApp
+net.zmobile.ui.layout.TestGridLayout -> net.zmobile.ui.layout.TestGridLayout:
+    void destroyApp(boolean) -> destroyApp
+    void pauseApp() -> pauseApp
+    void startApp() -> startApp
+    void add(net.zmobile.ui.ZForm) -> a
+net.zmobile.ui.layout.TestMoreGridLayout -> net.zmobile.ui.layout.TestMoreGridLayout:
+    void destroyApp(boolean) -> destroyApp
+    void pauseApp() -> pauseApp
+    void startApp() -> startApp
+net.zmobile.ui.layout.TestRowLayout -> net.zmobile.ui.layout.TestRowLayout:
+    void destroyApp(boolean) -> destroyApp
+    void pauseApp() -> pauseApp
+    void startApp() -> startApp
+net.zmobile.ui.layout.ZDefautLayout -> net.zmobile.ui.layout.f:
+    net.zmobile.ge.ZPoint layout(net.zmobile.ui.ZContainer) -> a
+net.zmobile.ui.layout.ZFillLayout -> net.zmobile.ui.layout.h:
+    int type -> b
+    int marginWidth -> c
+    int marginHeight -> d
+    int spacing -> a
+    net.zmobile.ge.ZPoint layout(net.zmobile.ui.ZContainer) -> a
+net.zmobile.ui.layout.ZGridData -> net.zmobile.ui.layout.d:
+    int verticalAlignment -> a
+    int horizontalAlignment -> b
+    int widthHint -> c
+    int heightHint -> d
+    int horizontalIndent -> e
+    int verticalIndent -> f
+    int horizontalSpan -> g
+    int verticalSpan -> h
+    boolean grabExcessHorizontalSpace -> i
+    boolean grabExcessVerticalSpace -> j
+    int minimumWidth -> k
+    int minimumHeight -> l
+    boolean exclude -> m
+    int cacheWidth -> n
+    int cacheHeight -> o
+    int defaultWhint -> p
+    int defaultHhint -> q
+    int defaultWidth -> r
+    int defaultHeight -> s
+    int currentWhint -> t
+    int currentHhint -> u
+    int currentWidth -> v
+    int currentHeight -> w
+    void computeSize(net.zmobile.ui.ZComponent,int,int) -> a
+    java.lang.String toString() -> toString
+net.zmobile.ui.layout.ZGridLayout -> net.zmobile.ui.layout.g:
+    int numColumns -> a
+    boolean makeColumnsEqualWidth -> b
+    int marginWidth -> c
+    int marginHeight -> d
+    int marginLeft -> e
+    int marginTop -> f
+    int marginRight -> g
+    int marginBottom -> h
+    int horizontalSpacing -> i
+    int verticalSpacing -> j
+    net.zmobile.ui.layout.ZGridData getData(net.zmobile.ui.ZComponent[][],int,int,int,int,boolean) -> a
+    net.zmobile.ge.ZPoint layout(net.zmobile.ui.ZContainer) -> a
+    java.lang.String toString() -> toString
+net.zmobile.ui.layout.ZHTMLLayout -> net.zmobile.ui.layout.e:
+    net.zmobile.ge.ZPoint layout(net.zmobile.ui.ZContainer) -> a
+net.zmobile.ui.layout.ZLayout -> net.zmobile.ui.layout.a:
+    net.zmobile.ge.ZPoint layout(net.zmobile.ui.ZContainer) -> a
+net.zmobile.ui.layout.ZRowData -> net.zmobile.ui.layout.b:
+    int width -> a
+    int height -> b
+    boolean exclude -> c
+    java.lang.String toString() -> toString
+net.zmobile.ui.layout.ZRowLayout -> net.zmobile.ui.layout.c:
+    int type -> a
+    int marginWidth -> f
+    int marginHeight -> g
+    int spacing -> b
+    boolean wrap -> c
+    boolean pack -> d
+    boolean fill -> h
+    boolean center -> i
+    boolean justify -> e
+    int marginLeft -> j
+    int marginTop -> k
+    int marginRight -> l
+    int marginBottom -> m
+    net.zmobile.ge.ZPoint computeSize$47d34610(net.zmobile.ui.ZComponent) -> a
+    net.zmobile.ge.ZPoint layout(net.zmobile.ui.ZContainer) -> a
+    java.lang.String toString() -> toString
+net.zmobile.ui.layout.html.ZHTMLLayout -> a:
+    net.zmobile.ui.layout.html.ZHTMLLayout$ZHTMLRow currentRow -> b
+    int _align -> a
+    net.zmobile.ge.ZPoint layout(net.zmobile.ui.ZContainer) -> a
+net.zmobile.ui.layout.html.ZHTMLLayout$ZHTMLRow -> e:
+    int _align -> b
+    net.zmobile.ge.ZRect _rect -> a
+    java.util.Vector components -> c
+    boolean layout(net.zmobile.ui.ZComponent) -> a
+    void layout$145aeafa(int) -> a
+    int getRowLength() -> a
+    void access$0(net.zmobile.ui.layout.html.ZHTMLLayout$ZHTMLRow,int) -> a
+net.zmobile.util.Color -> net.zmobile.util.Color:
+    javax.microedition.lcdui.Display display -> a
+    net.zmobile.util.ColorChooser chooser -> b
+    javax.microedition.lcdui.Command exitCommand -> c
+    javax.microedition.lcdui.Command decimalCommand -> d
+    javax.microedition.lcdui.Command hexCommand -> e
+    javax.microedition.lcdui.Command coarseCommand -> f
+    javax.microedition.lcdui.Command fineCommand -> g
+    void startApp() -> startApp
+    void pauseApp() -> pauseApp
+    void destroyApp(boolean) -> destroyApp
+    void commandAction(javax.microedition.lcdui.Command,javax.microedition.lcdui.Displayable) -> commandAction
+net.zmobile.util.ColorChooser -> net.zmobile.util.d:
+    int width -> a
+    int height -> b
+    javax.microedition.lcdui.Font font -> c
+    int label_w -> d
+    int label_h -> e
+    int gray -> f
+    int rgbColor -> g
+    int radix -> h
+    int delta -> i
+    int ndx -> j
+    boolean isColor -> k
+    int pndx -> l
+    int[] palette -> m
+    void setColor(int) -> a
+    int getRedComponent() -> a
+    int getGreenComponent() -> b
+    int getBlueComponent() -> c
+    void showNotify() -> showNotify
+    void paint(javax.microedition.lcdui.Graphics) -> paint
+    void setRadix(int) -> b
+    void setDelta(int) -> c
+    java.lang.String format(int) -> d
+    void keyRepeated(int) -> keyRepeated
+    void keyPressed(int) -> keyPressed
+net.zmobile.util.Logger -> net.zmobile.util.a:
+    int logLevel -> a
+    void log(int,java.lang.String) -> a
+net.zmobile.util.URLCoder -> net.zmobile.util.b:
+    java.lang.String[] hex -> a
+    java.lang.String encode(java.lang.String) -> a
+net.zmobile.util.Utility -> net.zmobile.util.c:
+    byte[] int2Byte(int) -> a
+    int byte2Int(byte[]) -> a

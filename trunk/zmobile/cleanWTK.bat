@@ -1,0 +1,1 @@
+rd /s /Q   D:\WTK22\appdb\storerage

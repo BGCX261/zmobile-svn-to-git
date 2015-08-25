@@ -1,0 +1,11 @@
+MIDlet-1: New Midlet,,TOT
+MIDlet-Jar-Size: 131286
+MIDlet-Jar-URL: zmobile.jar
+MIDlet-Name: zmobile Midlet Suite
+MIDlet-Vendor: Midlet Suite Vendor
+MIDlet-Version: 1.0.8
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.0
+debug: 0
+lhl: http://127.0.0.1:8080/testpage/test.xml
+lhv: 2.2
